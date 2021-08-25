@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Contact us Form | CodingNepal</title> -->
+    <link rel="stylesheet" href="../static/cal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+Predecto</div>
+<form action="{{url_for('Calculate')}}">
+
+    <div class="form-row">
+        <div class="input-section three-div">
+            <label for="age">Age</label>
+            <input type="number" required name="age">
+        </div>
+        <div class="input-section three-div">
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="1" selected>Male</option>
+                <option value="0">Female</option>
+            </select>
+        </div>
+        <div class="input-section three-div">
+            <label for="cp">Chest Pain Type:</label>
+            <select name="cp" id="cp">
+                <option value="0" selected>Low</option>
+                <option value="1">Medium</option>
+                <option value="2">Hign</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row ">
+        <div class="input-section two-div">
+            <label for="trestbps">Resting Blood Pressure (in mm)</label>
+            <input type="number" required name="trestbps">
+        </div>
+        <div class="input-section two-div">
+            <label for="chol">Cholestroal (in mg)</label>
+            <input type="number" required name="chol">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="input-section three-div">
+            <label for="fbs">Fasting Blood sugar:</label>
+            <select name="fbs" id="fbs">
+                <option value="0" selected>False</option>
+                <option value="1">True</option>
+            </select>
+        </div>
+        <div class="input-section three-div">
+            <label for="restecg">Rest ECG:</label>
+            <select name="restecg" id="restecg">
+                <option value="0" selected>Low</option>
+                <option value="1">Medium</option>
+                <option value="2">Hign</option>
+            </select>
+        </div>
+        <div class="input-section three-div">
+            <label for="thalach">Maximum Heart:</label>
+            <input type="number" required name="thalach">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="input-section three-div">
+            <label for="exang">exercise induced angina:</label>
+            <select name="exang" id="exang">
+                <option value="0" selected>No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+        <div class="input-section three-div">
+            <label for="oldpeak">ST depression:</label>
+            <input type="number" required name="oldpeak">
+        </div>
+        <div class="input-section three-div">
+            <label for="slope">ST segment:</label>
+            <select name="slope" id="slope">
+                <option value="2" selected>2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="input-section two-div">
+            <label for="ca">number of major vessels (0-3)<br>colored by flourosopy:</label>
+            <select name="ca" id="ca">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2" >2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="input-section two-div">
+            <label for="thal">THAL:</label>
+            <select name="thal" id="thal">
+                <option value="1" selected>normal</option>
+                <option value="2">fixed defect</option>
+                <option value="3">reversable defect</option>
+            </select>
+        </div>
+    </div>
+
+<div class="form-row submit-btn">
+          <div class="input-data">
+            <div class="inner"></div>
+            <input type="submit" value="submit">
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Contact us Form | CodingNepal</title> -->
+    <link rel="stylesheet" href="../static/result.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                    <h3>Result</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    {% if result %}
+                    <h2>probability High</h2>
+                    {% else %}
+                    <h2>probability Low</h2>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                    <h3>Food</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <ul>
+                        <li>Leafy Green Vegetables</li>
+                        <li>Whole Grains</li>
+                        <li>Berries</li>
+                        <li>Avocados</li>
+                        <li>Walnuts</li>
+                        <li>Beans</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                    <h3>Exercise</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <ul>
+                        <li>Brisk walking</li>
+                        <li>Running</li>
+                        <li>Swimming</li>
+                        <li>Cycling</li>
+                        <li>Playing tennis</li>
+                        <li>Jumping Rope</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
